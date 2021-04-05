@@ -142,7 +142,7 @@ namespace Engarde_Synthesis
             weaponCopy.Data.Speed *= speedMult;
             weaponCopy.Data.Reach *= reachMult;
             weaponCopy.SetStagger(defaultWeight, staggerMult);
-            weaponCopy.Critical!.Damage = (ushort) Math.Round(weaponCopy.BasicStats!.Damage *
+            weaponCopy.Critical!.Damage = (ushort) Math.Round(weaponCopy.Critical!.Damage *
                                                               _settings.Value.weaponSettings.weaponCritDamageMult *
                                                               critMult);
         }
